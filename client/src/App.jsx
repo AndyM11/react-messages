@@ -3,7 +3,8 @@ import io from "socket.io-client";
 import favicon from "../public/chat.png";
 import { Helmet } from "react-helmet";
 
-const socket = io("http://localhost:4000");
+//const socket = io("http://localhost:4000");
+const socket = io("/");
 
 export default function App() {
   const [message, setMessage] = useState("");
